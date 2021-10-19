@@ -1,0 +1,30 @@
+
+<div id="omikuji" class="big-bg">
+  <header class="page-header wrapper">
+    <h1 class="logo"><a routerLink="/">Sakamoto Haruki</a></h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a routerLink="/">Top</a></li>
+        <li><a routerLink="/portfolio">Portfolio</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+      <h1 class="omi-title">おみくじ</h1>
+      <div class="kuji-img">
+          <img src="/assets/images/kuji.jpg">
+      </div>
+      <button (click)="draw()">おみくじを引く</button>
+      <p *ngIf="omikuji">
+       今日のあなたの運勢は<span id="result">{{ omikuji }}</span>です！
+      </p>
+  </div>
+
+  <footer>
+      <div class="wrapper">
+          <p><small>&copy; 2021 haruki sakamoto</small></p>
+      </div>
+  </footer>
+</div>

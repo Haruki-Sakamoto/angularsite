@@ -1,0 +1,80 @@
+@media (max-width: 600px) {
+  .page-title,
+  .port-title {
+      font-size: 2.5rem;
+      margin-top: 30px;
+  }
+  .page-header {
+      flex-direction: column;
+      align-items: center;
+  }
+  .port-info {
+      margin-bottom: 60px;
+  }
+
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+      padding-left: 0;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+  .top-content,
+  .portfolio-contents,
+  .contact-contents {
+      margin-top: 20%;
+  }
+  .button {
+      font-size: 1rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: #560d04;
+}
+a:hover {
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+/* omiliji　*/
+.container {
+  text-align: center;
+}
+
+.omi-title {
+  font-style: italic;
+  font-size: 50px;
+  margin-bottom: 0;
+  color: #eb6100;
+}
+p {
+  font-size: 20px
+}
+button {
+  width: 300px;
+  height: 50px;
+  color: #fff;
+  margin-bottom: 30px;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+}
+button:hover {
+  margin-top: 1px;
+  margin-bottom: 30px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+  cursor: pointer;
+}
+span {
+  font-size: 30px;
+  color: red;
+}
+footer {
+  padding-top: 60px;
+  text-align: center;
+}
+#result {
+  color: red;
+}

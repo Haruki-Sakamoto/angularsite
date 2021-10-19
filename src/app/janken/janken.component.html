@@ -1,0 +1,35 @@
+<div id="janken" class="big-bg">
+  <header class="page-header wrapper">
+    <h1 class="logo"><a routerLink="/">Sakamoto Haruki</a></h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a routerLink="/">Top</a></li>
+        <li><a routerLink="/portfolio">Portfolio</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="janken-title">じゃんけん</h1>
+    <div class="jankenlist">
+      <img src="/assets/images/jan0.png" alt="" />
+      <input type="button" value="グー" (click)="rsp(1);" />
+      <img src="/assets/images/jan1.png" alt="" />
+      <input type="button" value="チョキ" (click)="rsp(2);" />
+      <img src="/assets/images/jan2.png" alt="" />
+      <input type="button" value="パー" (click)="rsp(3);" />
+    </div>
+
+    <div>
+      <div id="player"></div>
+      <div id="computer"></div>
+      <div id="resultMsg"></div>
+    </div>
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2021 haruki sakamoto</small></p>
+      </div>
+    </footer>
+  </div>
+</div>

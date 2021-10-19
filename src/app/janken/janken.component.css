@@ -1,0 +1,61 @@
+/* default*/
+@media (max-width: 600px) {
+  .page-title,
+  .port-title {
+      font-size: 2.5rem;
+      margin-top: 30px;
+  }
+  .page-header {
+      flex-direction: column;
+      align-items: center;
+  }
+  .port-info {
+      margin-bottom: 60px;
+  }
+
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+      padding-left: 0;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+  .top-content,
+  .portfolio-contents,
+  .contact-contents {
+      margin-top: 20%;
+  }
+  .button {
+      font-size: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #560d04;
+}
+a:hover {
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+.container {
+  text-align: center;
+}
+.janken-title {
+  color:rgb(98, 23, 210);
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+#player {
+  margin: 20px;
+}
+#computer {
+  margin: 20px;
+}
+#resultMsg {
+  color: red;
+  font-size: 20px;
+}

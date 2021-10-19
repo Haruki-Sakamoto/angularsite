@@ -13,5 +13,9 @@
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,          // すべての型定義ファイル（*.d.ts）の型チェックをスキップする
+    "noStrictGenericChecks": true, // 関数型の汎用シグネチャの厳密なチェックを無効にする
+}
 }

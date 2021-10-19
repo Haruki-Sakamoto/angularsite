@@ -1,0 +1,56 @@
+<body class="portbody">
+    <div id="portfolio" class="big-bg">
+      <header class="page-header wrapper port">
+        <h1 class="logo"><a routerLink="/">Sakamoto Haruki</a></h1>
+        <nav>
+          <ul class="main-nav port">
+            <li><a routerLink="/">Top</a></li>
+            <li><a routerLink="/portfolio">Portfolio</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div @fadein-title class="wrapper port">
+        <h2 class="page-title">Portfolio</h2>
+      </div>
+
+      <div class="portfolio-contents wrapper">
+        <article>
+          <header class="port-info">
+            <h2 class="port-title"><a routerLink="/omikuji">おみくじ</a></h2>
+            <p class="port-cat">使用言語：HTML CSS JavaScript</p>
+            <a routerLink="/omikuji" @fadein-img><img class="animate" src="https://i.gyazo.com/5de6fcb25eaec899ff2e9666bd3b8180.png" alt="Image from Gyazo" width="1005"/></a>
+            <p>基本的なJavascriptの構文であるMath.floor(Math.random)でランダムな数値を出し、それをもとに運勢の表示を変えるという簡易的なおみくじです。</p>
+            <p>また、配列の中の値の数を増やしたりif文を用いる事でおみくじの確率を変更する事も可能。</p>
+          </header>
+
+          <header class="port-info">
+            <h2 class="port-title"><a routerLink="/janken">じゃんけん</a></h2>
+            <p class="port-cat">使用言語：HTML CSS JavaScript</p>
+            <a routerLink="/janken" @fadein-img><img class="animate" src="https://i.gyazo.com/963395f8f6db8be967422295db8a74d7.png" alt="Image from Gyazo" width="1005"/></a>
+            <p>HTML内に関数をかき、ボタンがクリックされたときに処理が行われる。基本的なJavascriptの構文であるMath.floor(Math.random)でランダムな数値を出し、それをもとに勝敗をつける仕組みで動く簡易的なじゃんけんゲームになります。</p>
+            <p>一度仕組みを作ってしまえば、確実に勝てるじゃんけんゲームを作ることも可能です。</p>
+          </header>
+        </article>
+        <aside>
+          <h3 class="port-list">作品一覧</h3>
+          <ul class="port-menu">
+            <li><a routerLink="/omikuji">おみくじ</a></li>
+            <li><a routerLink="/janken">じゃんけん</a></li>
+            <li><a routerLink="#">Todoリスト</a></li>
+            <li><a routerLink="#">テトリス</a></li>
+          </ul>
+          <h3 class="port-list">坂本 晴輝について</h3>
+          <p>
+            1998年1月14日埼玉県上福岡生まれ。東京都赤羽育ち。日出高校卒業後、専修大学法学部に入学するも中退。2021年7月末に沖縄に移住し、現在見習いのプログラマーとして勤務している。
+          </p>
+        </aside>
+      </div>
+      <footer>
+        <div class="wrapper">
+          <p><small>&copy; 2021 haruki sakamoto</small></p>
+        </div>
+    </footer>
+  </div>
+</body>

@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+  color: #560d04;
+}
+a:hover {
+  color: #fff;
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+img {
+  max-width: 100%;
+}
+.logo {
+  margin-top: 14px;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 25px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 36px;
+}
+.wrapper {
+  color: #560d04;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.top-content {
+  text-align: center;
+  margin-top: 10%;
+  opacity: 1;
+  letter-spacing: 0.1em;
+}
+.top-content p {
+  font-size: 1.25rem;
+  margin: 10px 0 42px;
+  color: #fff;
+  opacity: 1;
+}
+.page-title {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+@media (max-width: 600px) {
+  .page-title,
+  .port-title {
+      font-size: 2.5rem;
+      margin-top: 30px;
+  }
+  .page-header {
+      flex-direction: column;
+      text-align: center;
+  }
+  .port-info {
+      margin-bottom: 60px;
+  }
+
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+  .top-content,
+  .portfolio-contents,
+  .contact-contents {
+      margin-top: 20%;
+  }
+  .button {
+      font-size: 1rem;
+  }
+  p.page-title {
+      font-size: 1rem;
+  }
+  .portfolio-contents {
+      flex-direction: column;
+  }
+  article,
+  aside {
+      width: 100%;
+  }
+  #contact .page-title {
+      margin-top: 40px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+          max-width: 100%;
+  }
+  #location .wrapper {
+      flex-direction: column;
+  }
+  .location-map,
+  .location-info {
+      width: 100%;
+  }
+  iframe {
+      width: 100%;
+  }
+}

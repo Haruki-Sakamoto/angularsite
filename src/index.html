@@ -2,12 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Angularsite</title>
+  <title>My site</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto:ital@1&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/favicon.png" />
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <style>
+      app-root {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: gray;
+      }
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #4055ae;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 3s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .loader-text {
+        display: block;
+        margin-top: 1em;
+      }
+      </style>
+      <div class="loader"></div>
+      <span class="loader-text">Loading...</span>
+  </app-root>
 </body>
 </html>
